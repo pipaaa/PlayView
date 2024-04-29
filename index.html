@@ -26,9 +26,29 @@
 
 <body>
     <!-- Aquí se inserta el iframe como página principal -->
-    <iframe title="PLAYVIEW PAGINA PRINCIPAL" src="https://view.genial.ly/662f919c0eeae20014e289c6"
+    <iframe title="PLAYVIEW PAGINA PRINCIPAL" id="geniallyFrame"
         allow="autoplay; fullscreen" allowfullscreen sandbox="allow-scripts allow-same-origin">
     </iframe>
+
+    <script>
+        // Función para detectar el tipo de dispositivo y cargar el Genially adecuado
+        function cargarGenially() {
+            var esTelefonoMovil = window.matchMedia("(max-width: 768px)").matches; // Considera ancho <= 768px como teléfono móvil
+
+            var geniallyUrl;
+            if (esTelefonoMovil) {
+                geniallyUrl = "https://view.genial.ly/662f919c0eeae20014e289c6"; // URL para teléfono móvil
+            } else {
+                geniallyUrl = "https://view.genial.ly/XXXXXXXXXXXX"; // URL para otros dispositivos
+            }
+
+            var iframe = document.getElementById("geniallyFrame");
+            iframe.src = geniallyUrl; // Cargar la URL seleccionada en el iframe
+        }
+
+        // Ejecutar la función al cargar la página
+        cargarGenially();
+    </script>
 </body>
 
 </html>
