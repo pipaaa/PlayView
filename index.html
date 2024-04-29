@@ -26,9 +26,11 @@
 
 <body>
     <!-- Aquí se inserta el iframe como página principal -->
-    <iframe title="PLAYVIEW PAGINA PRINCIPAL" id="geniallyFrame"
-        allow="autoplay; fullscreen" allowfullscreen sandbox="allow-scripts allow-same-origin">
-    </iframe>
+    <div style="width: 100%;">
+        <div style="position: relative; padding-bottom: 46.96%; padding-top: 0; height: 0;">
+            <iframe title="paginaprincipalplayviewgeniallyprivadoypublico" frameborder="0" width="2300" height="1080" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/662fa3806fbbd80014fde675" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+        </div>
+    </div>
 
     <script>
         // Función para detectar el tipo de dispositivo y cargar el Genially adecuado
@@ -42,7 +44,7 @@
                 geniallyUrl = "https://view.genial.ly/662fa3806fbbd80014fde675/interactive-content-paginaprincipalplayviewgeniallyprivadoypublico"; // URL para otros dispositivos (ordenadores)
             }
 
-            var iframe = document.getElementById("geniallyFrame");
+            var iframe = document.querySelector("iframe");
             iframe.src = geniallyUrl; // Cargar la URL seleccionada en el iframe
         }
 
