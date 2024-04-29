@@ -5,11 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Servicio Técnico Profesional</title>
+    
+    <!-- Incluir la fuente Jersey 25 desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Jersey 25', sans-serif; /* Aplicar la fuente Jersey 25 */
             background-image: url('fondodepantalla.png');
             background-size: cover;
             color: white;
@@ -42,10 +46,26 @@
             color: white;
             cursor: pointer;
         }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            max-width: 200px;
+        }
     </style>
+    
+    <!-- Configurar ícono de la página -->
+    <link rel="icon" type="image/png" href="icono.png">
 </head>
 
 <body>
+    <!-- Logotipo de PlayView -->
+    <img class="logo" src="playviewlogo.png" alt="Logo PlayView">
+
     <div class="container">
         <h1>Servicio Técnico Profesional</h1>
         <p>Bienvenido al servicio técnico de PlayView, donde ofrecemos soluciones rápidas y efectivas para tus necesidades tecnológicas. Contamos con tres modalidades de servicio técnico adaptadas a tus preferencias:</p>
@@ -79,12 +99,7 @@
         <p><strong>Preguntas Frecuentes:</strong></p>
         <p>Visita nuestra sección de Preguntas Frecuentes para encontrar respuestas a las consultas comunes. ¡Podrías resolver tu duda de inmediato!</p>
 
-        <p><strong>Contratación de Servicio Técnico:</strong></p>
-        <ul style="text-align: left;">
-            <li><strong>Servicio Técnico por Mensajería:</strong> Escríbenos por WhatsApp al <strong>+34 644 67 75 82</strong>.</li>
-            <li><strong>Servicio Técnico Telefónico:</strong> Concerta una cita utilizando el formulario de abajo.</li>
-            <li><strong>Servicio Técnico en Persona:</strong> También puedes programar una cita utilizando el formulario de abajo.</li>
-        </ul>
+        <p class="header">Contrata el Servicio Técnico</p>
 
         <!-- Formulario de reserva de citas -->
         <form action="https://calendly.com/txangu-p/servicio-tecnico-para-playview" method="GET" target="_blank">
