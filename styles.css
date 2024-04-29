@@ -3,8 +3,12 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    color: white; /* Texto principal en blanco */
+    color: white; /* Todo el texto en blanco */
     background-color: black; /* Fondo negro */
+    background-image: url('fondodepantalla.png'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .container {
@@ -27,7 +31,6 @@ header img {
 
 main {
     padding: 50px 0;
-    background-color: black;
 }
 
 .service {
@@ -36,13 +39,7 @@ main {
     justify-content: space-between;
     margin-bottom: 30px;
     padding: 20px;
-    background-color: #FFD700; /* Fondo dorado */
-    border-radius: 8px;
-}
-
-.service-img {
-    width: 150px;
-    height: auto;
+    background-color: rgba(255, 215, 0, 0.8); /* Fondo dorado con transparencia */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -66,10 +63,15 @@ main {
 /* Estilos específicos para encabezados */
 h1, h2, h3 {
     text-align: center;
-    color: #FFD700; /* Encabezados en dorado */
+    color: white; /* Encabezados en blanco */
 }
 
 /* Enlaces */
 a {
     color: white; /* Color de enlaces en blanco */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
