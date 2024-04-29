@@ -1,8 +1,10 @@
+/* Estilos generales */
 body {
-   font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: white; /* Texto principal en blanco */
+    background-color: black; /* Fondo negro */
 }
 
 .container {
@@ -14,43 +16,60 @@ body {
 header {
     text-align: center;
     padding: 20px 0;
+    background-color: black;
 }
 
 header img {
     max-width: 200px;
+    display: block;
+    margin: 0 auto;
 }
 
 main {
-    text-align: right;
     padding: 50px 0;
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(5px);
+    background-color: black;
 }
 
 .service {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin-bottom: 30px;
+    padding: 20px;
+    background-color: #FFD700; /* Fondo dorado */
+    border-radius: 8px;
 }
 
 .service-img {
     width: 150px;
-    margin-right: 20px;
+    height: auto;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .service-description {
-    max-width: 60%;
+    flex: 1;
+    padding-left: 20px;
 }
 
 .service-description h2 {
-    color: #007bff;
+    color: black; /* Encabezados en negro */
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
 
 .service-description p {
+    color: black; /* Texto en negro */
     margin-bottom: 15px;
+}
+
+/* Estilos específicos para encabezados */
+h1, h2, h3 {
+    text-align: center;
+    color: #FFD700; /* Encabezados en dorado */
+}
+
+/* Enlaces */
+a {
+    color: white; /* Color de enlaces en blanco */
 }
