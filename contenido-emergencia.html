@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Acceso a Contenido de Fútbol</title>
+    
+    <!-- Estilos -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Jersey 25', sans-serif; /* Fuente Jersey 25 */
+            background-color: #f0f0f0;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 12px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Ingresa el Código para Acceder al Contenido de Fútbol</h2>
+        <form id="codeForm">
+            <input type="text" id="codeInput" placeholder="Introduce el código aquí" required>
+            <button type="submit">Acceder</button>
+        </form>
+    </div>
+
+    <!-- Script para verificar el código -->
+    <script>
+        document.getElementById('codeForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evitar que se envíe el formulario
+
+            var userInput = document.getElementById('codeInput').value;
+            var correctCode = 'futbol2024'; // Código correcto para desbloquear
+
+            if (userInput === correctCode) {
+                // Redireccionar a la página de contenido de fútbol si el código es correcto
+                window.location.href = 'pagina-futbol.html';
+            } else {
+                alert('Código incorrecto. Inténtalo de nuevo.'); // Mostrar mensaje de código incorrecto
+            }
+        });
+    </script>
+</body>
+
+</html>
